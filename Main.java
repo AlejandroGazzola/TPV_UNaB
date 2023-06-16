@@ -16,10 +16,7 @@ public class Main{
         listaProductos.add(new Producto("Xiaomi", 150000));
         listaProductos.add(new Producto("Samsung", 200000));
         listaProductos.add(new Producto("Iphone", 800000));
-        listaProductos.add(new Producto("Camiseta", 29));
-        listaProductos.add(new Producto("Pantalón", 49));
-        listaProductos.add(new Producto("Zapatos", 79));
-
+        listaProductos.add(new Producto("Motorola", 180000));
         //Ingresa cliente
         usuario.ingresar();
 
