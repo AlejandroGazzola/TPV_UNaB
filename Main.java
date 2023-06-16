@@ -1,29 +1,50 @@
-public class Main {
+import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class Main{
     public static void main(String[] args) {
         //Crear cliente
-        Cliente usuario = new Cliente("Alejandro", "1234");
+        Cliente usuario = new Cliente("1", "1234");
 
-        //Crear producto
-        Producto producto1 = new Producto("Xiaomi", 150000);
-        Producto producto2 = new Producto("Samsung", 200000);
+        Scanner scanner = new Scanner(System.in);
+        //Crear lista de productos
+        List<Producto> listaProductos = new ArrayList<>();
+
+        // Agregar productos a la lista
+        listaProductos.add(new Producto("Xiaomi", 150000));
+        listaProductos.add(new Producto("Samsung", 200000));
+        listaProductos.add(new Producto("Iphone", 800000));
+        listaProductos.add(new Producto("Camiseta", 29));
+        listaProductos.add(new Producto("Pantalón", 49));
+        listaProductos.add(new Producto("Zapatos", 79));
 
         //Ingresa cliente
         usuario.ingresar();
 
-        //Selecciona producto
-        usuario.seleccionarProducto(producto1);
-        usuario.seleccionarProducto(producto2);
+        // Acceder a los productos de la lista
+        for (Producto producto : listaProductos) {
+            System.out.println(producto);
 
-        //El cliente compra y obtiene ticket
-        Ticket ticket = usuario.comprar();
+        }
 
-        //Generar ticket
-        ticket.generarTicket();
 
-        //Calcula total
-        float total = ticket.calcularTotal();
+//        //Selecciona producto
+//        System.out.print("Ingrese productos");
+//        String nombreProducto = scanner.nextLine();
+//
+//        Producto.seleccionarProducto(nombreProducto);
 
-        //Imprimir el total
-        System.out.println("El total es: " + total);
+//        //El cliente compra y obtiene ticket
+//        //Ticket ticket = Ticket.imprimirTicket();
+//
+//        //Generar ticket
+//        Ticket compra1 = new Ticket();
+//        ticket.generarTicket();
+
+//        //Calcula total
+//        float total = ticket.calcularTotal();
+
     }
 }

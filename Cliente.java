@@ -1,3 +1,6 @@
+import java.util.Objects;
+import java.util.Scanner;
+
 public class Cliente {
     private String usuario;
     private String contraseña;
@@ -8,15 +11,22 @@ public class Cliente {
     }
 
     public void ingresar() {
-    // Ingresa el cliente
-    }
-    public void seleccionarProducto(Producto producto) {
-    // Selecciona producto
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ingrese su usuario: ");
+        String inputUsuario = scanner.nextLine();
+
+        System.out.print("Ingrese su contraseña: ");
+        String inputContraseña = scanner.nextLine();
+
+        if (inputUsuario.equals(usuario) && inputContraseña.equals(contraseña)) {
+            System.out.println("Bienvenido, " + usuario + ".");
+        } else {
+            System.out.println("Usuario y/o contraseña incorrectos.");
+        }
     }
 
-    public Ticket comprar() {
-        Ticket ticket = new Ticket();
-        return ticket;
-    }
+
+
 }
 
