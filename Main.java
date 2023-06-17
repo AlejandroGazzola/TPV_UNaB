@@ -19,7 +19,7 @@ public class Main {
         Vendedor vendedor = new Vendedor(inputUsuario, inputContraseña);
 
         //Lista de productos
-        Producto prod1 = new Producto("Xiaomi1 ", 150000);
+        Producto prod1 = new Producto("Xiaomi ", 150000);
         Producto prod2 = new Producto("Samsung ", 200000);
         Producto prod3 = new Producto("IPhone  ", 800000);
         Producto prod4 = new Producto("Motorola", 180000);
