@@ -25,3 +25,8 @@ __Main__: Es la clase principal del programa, la misma contiene el método de ej
 
 En esta aplicación proponemos que el sistema se inicie con un Inicio de sesión por parte de quien sea vendedor acreditado del comercio.
 Una vez realizada la selección de productos y la generación de facturas, el vendedor de manera física recibirá el pago por parte del cliente.
+
+# Resultado
+
+![image](https://github.com/AlejandroGazzola/TPV_UNaB/assets/124055626/580fb333-3e39-45dd-b41a-faf770c41877)
+
