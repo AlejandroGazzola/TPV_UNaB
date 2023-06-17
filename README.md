@@ -8,7 +8,7 @@ Nos proponemos en esta primera etapa ofrecer un software sencillo de utilizar qu
 
 # Diseño
 
-![[Pasted image 20230617200440.png]]
+![image](https://github.com/AlejandroGazzola/TPV_UNaB/assets/124055626/338564bc-057f-4a13-b23f-98687e7d343b)
 
 # Actores principales:
 
