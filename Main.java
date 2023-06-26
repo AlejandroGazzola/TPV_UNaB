@@ -37,7 +37,6 @@ public class Main {
             do {
                 System.out.print("Ingrese el número de producto (0 para finalizar e imprimir factura): ");
                 opcion = scanner.nextInt();
-                scanner.nextLine();
 
                 switch (opcion) {
                     case 1:
