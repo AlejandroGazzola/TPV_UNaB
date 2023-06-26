@@ -1,6 +1,6 @@
 public class Producto {
-    public String nombre;
-    public double precio;
+    private String nombre;
+    private double precio;
 
     public Producto(String nombre, double precio) {
         this.nombre = nombre;
@@ -15,5 +15,13 @@ public class Producto {
     public double getPrecio() {
 
         return precio;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setPrecio(double precio) {
+        this.precio = precio;
     }
 }
