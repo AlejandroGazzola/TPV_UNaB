@@ -12,7 +12,7 @@ public class DB {
     //Boleano para definir si usuario y contraseña son correctos
     public static boolean ingresarAlSistema(Vendedor usuario) {
         for (Vendedor vendedor: usuariosRegistrados) {
-            if (vendedor.getNombre().equals(usuario.getNombre())) {
+            if (vendedor.getNombre().equals(usuario.getNombre()) && vendedor.getContrasena().equals(usuario.getContrasena())) {
                 System.out.println("Bienvenido " + usuario.getNombre());
                 return true;
             }

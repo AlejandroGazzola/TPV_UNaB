@@ -14,9 +14,9 @@ public class Main {
 
         //Ingresa contraseña
         System.out.print("Ingrese su contraseña: ");
-        String inputContraseña = scanner.nextLine();
+        String inputContrasena = scanner.nextLine();
 
-        Vendedor vendedor = new Vendedor(inputUsuario, inputContraseña);
+        Vendedor vendedor = new Vendedor(inputUsuario, inputContrasena);
 
         //Lista de productos
         Producto prod1 = new Producto("Xiaomi ", 150000);
@@ -81,6 +81,5 @@ public class Main {
             scanner.close();
 
         }
-
     }
 }
